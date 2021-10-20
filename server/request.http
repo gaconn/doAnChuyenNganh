@@ -1,0 +1,31 @@
+GET http://localhost:5000/user/api/login
+
+###
+POST http://localhost:5000/user/api/register HTTP/1.1
+content-type: application/json
+
+{
+    "userName": "quan2",
+    "password": "1234",
+    "email": "quan12xz@gmail.com"
+}
+###
+POST http://localhost:5000/user/api/login HTTP/1.1
+content-type: application/json
+
+{
+    "userName": "quan2",
+    "password": "1234e"
+}
+###
+POST http://localhost:5000/product/api/addProduct HTTP/1.1
+content-type: application/json
+
+{
+    "nameProduct":"ao thun xanh",
+    "description": "dep",
+    "price": 50000,
+    "kind": "T-shirt",
+    "quantity": 200,
+    "material": "coton"
+}
